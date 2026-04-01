@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane style="-fx-background-color: #93b0bd" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="498.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxactivities.CalculatorController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="121.0" minWidth="10.0" prefWidth="120.4" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="146.0" minWidth="10.0" prefWidth="108.79999999999998" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="151.60000000000002" minWidth="10.0" prefWidth="130.79999999999998" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="177.19999999999993" minWidth="10.0" prefWidth="177.19999999999993" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="111.0" minHeight="10.0" prefHeight="47.599999999999994" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="142.2" minHeight="10.0" prefHeight="51.19999999999999" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="165.4000152587891" minHeight="10.0" prefHeight="93.6" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="1st Number" />
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2">
+         <children>
+            <Label text="2nd Number" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="tfNumber1" prefHeight="26.0" prefWidth="84.0" />
+         </children></HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <ComboBox fx:id="cbOperations" prefHeight="26.0" prefWidth="69.0" visibleRowCount="4" />
+               </children>
+            </HBox>
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <TextField fx:id="tfNumber2" prefHeight="26.0" prefWidth="85.0" />
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="78.0" prefWidth="162.0" GridPane.columnIndex="3" GridPane.rowIndex="1">
+         <children>
+            <Label fx:id="lblResult" />
+         </children></HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3">
+         <children>
+            <Label text="Result" />
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="85.0" prefWidth="498.0" GridPane.columnSpan="4" GridPane.rowIndex="2">
+         <children>
+            <Button fx:id="btnCompute" mnemonicParsing="false" onAction="#onComputeClicked" text="Compute Result" />
+         </children>
+      </HBox>
+   </children>
+</GridPane>

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="420.0" prefWidth="380.0" style="-fx-background-color: #c96767;" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafxactivities.FoodOrderingSystem">
+  <columnConstraints>
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="6.400000238418578" prefWidth="33.399998092651366" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="87.40000190734864" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="94.6" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="401.0" minWidth="10.0" prefWidth="139.2" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="182.4" minHeight="10.0" prefHeight="44.6" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="229.40000762939454" minHeight="0.0" prefHeight="43.39999999999999" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="240.40000000000003" minHeight="10.0" prefHeight="59.400000000000006" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="10.0" prefHeight="31.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="2.0" prefHeight="34.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="2.0" prefHeight="34.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="0.0" prefHeight="34.60000000000002" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="0.0" prefHeight="35.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="5.599999999999994" prefHeight="35.400000000000034" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="10.0" prefHeight="37.400000000000034" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="10.0" prefHeight="37.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="10.0" prefHeight="26.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="10.0" prefHeight="30.600000000000023" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="10.0" prefHeight="35.80000000000001" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="240.40000000000003" minHeight="10.0" prefHeight="44.19999999999999" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="300.0" prefWidth="300.0" GridPane.columnIndex="1" GridPane.columnSpan="3">
+         <children>
+            <Label text="Welcome to Javalibee!">
+               <font>
+                  <Font size="18.0" />
+               </font></Label>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="40.0" prefWidth="230.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="1">
+         <children>
+            <Label text="made with JavaFX" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </HBox>
+      <HBox alignment="BOTTOM_CENTER" prefHeight="64.0" prefWidth="230.0" GridPane.columnSpan="3" GridPane.rowIndex="2">
+         <children>
+            <Label text="Menu" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="BOTTOM_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="3" GridPane.rowIndex="2">
+         <children>
+            <Label alignment="BOTTOM_CENTER" text="Discounts" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="4">
+         <children>
+            <CheckBox fx:id="cPizza" mnemonicParsing="false" onAction="#cPizzaOnClicked" text="Pizza" />
+         </children></VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+         <children>
+            <CheckBox fx:id="cBurger" mnemonicParsing="false" onAction="#cBurgerOnClicked" text="Burger" />
+         </children></VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="6">
+         <children>
+            <CheckBox fx:id="cFries" mnemonicParsing="false" onAction="#cFriesOnClicked" text="Fries" />
+         </children></VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="7">
+         <children>
+            <CheckBox fx:id="cSoftdrinks" mnemonicParsing="false" onAction="#cSoftdrinksOnClicked" text="Soft Drinks" />
+         </children></VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="8">
+         <children>
+            <CheckBox fx:id="cTea" mnemonicParsing="false" onAction="#cTeaOnClicked" text="Tea" />
+         </children></VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="9">
+         <children>
+            <CheckBox fx:id="cSundae" mnemonicParsing="false" onAction="#cSundaeOnClicked" text="Sundae" />
+         </children></VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <children>
+            <Label text="PHP 100" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <children>
+            <Label text="PHP 80" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <children>
+            <Label text="PHP 65" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <children>
+            <Label text="PHP 55" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="8">
+         <children>
+            <Label text="PHP 50" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="2" GridPane.rowIndex="9">
+         <children>
+            <Label text="PHP 40" />
+         </children>
+      </VBox>
+      <RadioButton fx:id="rbNone" mnemonicParsing="false" onAction="#noneOnClicked" selected="true" text="None" textAlignment="CENTER" GridPane.columnIndex="3" GridPane.rowIndex="4">
+         <toggleGroup>
+            <ToggleGroup fx:id="discountGroup" />
+         </toggleGroup>
+      </RadioButton>
+      <RadioButton fx:id="rb5" mnemonicParsing="false" onAction="#rb5OnClicked" text="5% off" textAlignment="CENTER" toggleGroup="$discountGroup" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <RadioButton fx:id="rb10" mnemonicParsing="false" onAction="#rb10OnClicked" text="10% off" textAlignment="CENTER" toggleGroup="$discountGroup" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <RadioButton fx:id="rb15" mnemonicParsing="false" onAction="#rb15OnClicked" text="15% off" textAlignment="CENTER" toggleGroup="$discountGroup" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <Button fx:id="orderButton" mnemonicParsing="false" onAction="#calculateOrder" text="Order" GridPane.columnIndex="3" GridPane.rowIndex="11" />
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="11">
+         <children>
+            <Label fx:id="subtotalLabel" text="Subtotal: " />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="12">
+         <children>
+            <Label fx:id="discountLabel" text="Discount: " />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.columnSpan="2" GridPane.rowIndex="13">
+         <children>
+            <Label fx:id="fPriceLabel" />
+         </children>
+      </HBox>
+      <VBox prefHeight="200.0" prefWidth="100.0" GridPane.columnIndex="3" GridPane.rowIndex="13">
+         <children>
+            <Button mnemonicParsing="false" onAction="#clearOnClicked" text="Clear Order" />
+         </children>
+      </VBox>
+   </children>
+</GridPane>
