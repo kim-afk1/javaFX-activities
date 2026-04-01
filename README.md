@@ -9,3 +9,5 @@ from there you can run these three programs:
 
 i used sdk 26 and javafx 17 (specifically 17.0.12) for this activity.
 made using intellij and javafx
+
+for csit228
